@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Testing Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Software Testing Dashboard</h1>
+        <p>Test, Debug, Improve and Deliver Quality Software</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#testing">Testing</a>
+        <a href="#features">Features</a>
+        <a href="#report">Report</a>
+    </nav>
+
+    <main id="home">
+        <section class="hero">
+            <h2>Welcome to Software Quality Assurance</h2>
+            <p>
+                Learn how to test applications, identify bugs,
+                improve performance, and develop reliable software.
+            </p>
+            <button id="startBtn">Explore Testing</button>
+        </section>
+
+        <section id="testing">
+            <h2>Testing Methodologies</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Unit Testing</h3>
+                    <p>Tests individual functions and components
+                    to ensure they work correctly.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Integration Testing</h3>
+                    <p>Checks whether different modules communicate
+                    and exchange data properly.</p>
+                </div>
+
+                <div class="card">
+                    <h3>System Testing</h3>
+                    <p>Tests the complete application to verify
+                    that all features work together.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Acceptance Testing</h3>
+                    <p>Ensures the application meets user needs
+                    and business requirements.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Error Handling</h3>
+                    <p>Checks how the application responds to
+                    invalid inputs and unexpected situations.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Performance Testing</h3>
+                    <p>Evaluates speed, responsiveness, and
+                    application performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Development Best Practices</h2>
+
+            <div class="card-container">
+                <div class="card">
+                    <h3>Debugging</h3>
+                    <p>Identify errors, find their causes,
+                    and fix them efficiently.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Code Reviews</h3>
+                    <p>Review code to improve readability,
+                    maintainability, and coding standards.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Test Documentation</h3>
+                    <p>Record test cases, results, bugs,
+                    and solutions for future reference.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="report">
+            <h2>Testing Report</h2>
+
+            <form id="reportForm">
+                <label for="testName">Test Name</label>
+                <input type="text" id="testName"
+                       placeholder="Enter test name" >
+
+                <label for="testType">Testing Type</label>
+                <select id="testType" required>
+                    <option value="">Select testing type</option>
+                    <option>Unit Testing</option>
+                    <option>Integration Testing</option>
+                    <option>System Testing</option>
+                    <option>Performance Testing</option>
+                    <option>Error Handling</option>
+                </select>
+
+                <label for="testResult">Test Result</label>
+                <select id="testResult" required>
+                    <option value="">Select result</option>
+                    <option>Passed</option>
+                    <option>Failed</option>
+                    <option>Needs Improvement</option>
+                </select>
+
+                <label for="testDetails">Description</label>
+                <textarea id="testDetails"
+                          placeholder="Describe the test and its results"
+                          required></textarea>
+
+                <button type="submit">Submit Report</button>
+            </form>
+
+            <div id="reportOutput" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Software Testing Dashboard |
+        Frontend Development Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
